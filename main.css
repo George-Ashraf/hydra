@@ -1,0 +1,510 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #302C42;
+    overflow-x: hidden;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background: #302C42;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar .navbar-brand {
+    color: #8176AF;
+    text-transform: uppercase;
+    margin-left: 30px;
+}
+
+.navbar .navbar-brand img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.navbar .nav-item {
+    margin: 0 20px;
+}
+
+.navbar .nav-item .nav-link {
+    color: white;
+}
+
+.navbar .buttons button {
+    width: 130px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 0 5px;
+    border: solid white 1px;
+    color: white;
+    background-color: transparent;
+}
+
+.navbar .buttons button:nth-child(2) {
+    border: none;
+    color: black;
+    background-color: #8176AF;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner:after,
+.hamburger.is-active .hamburger-inner:before {
+    background-color: #8176AF;
+}
+
+.hamburger-inner,
+.hamburger-inner:after,
+.hamburger-inner:before {
+
+    background-color: #8176AF;
+}
+
+.home {
+    width: 100%;
+    height: auto;
+    margin-top: 140px;
+    padding-bottom: 20px;
+
+}
+
+.home .row {
+    justify-content: center;
+}
+
+.home .text {
+    height: auto;
+    padding-bottom: 40px;
+}
+
+.home .text h1 {
+    font-size: 45px;
+    color: white;
+}
+
+.home .text h1 span {
+    color: #8176AF;
+
+}
+
+.home .text p {
+    color: white;
+    margin: 50px 0;
+    font-size: 20px;
+}
+
+.home .text button {
+    border-radius: 40px;
+    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+    height: 40px;
+    width: 190px;
+    border: none;
+}
+
+.home .text i {
+    color: #C0B7E8;
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+.home .img {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .img img {
+    border-radius: 80px 80px 80px 200px;
+    width: 100%;
+    height: 100%;
+}
+
+.home .communication {
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+    border-radius: 90px;
+    background: radial-gradient(2900.76% 50.13% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
+    box-shadow: 0px 4px 4px 0px rgba(192, 183, 232, 0.01);
+    margin: 50px auto 0 auto;
+}
+
+.home .communication .row {
+    justify-content: center;
+    align-items: center;
+}
+
+.home .communication .infocomm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+
+    margin-top: 30px;
+
+}
+
+.home .communication .infocomm:nth-child(2) {
+    border-left: #8176AF solid 1px;
+    border-right: #8176AF solid 1px;
+}
+
+.home .communication .infocomm .icon {
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.home .communication .infocomm .icon i {
+    font-size: 50px;
+    color: #8176AF;
+}
+
+
+.home .communication .infocomm .text h1 {
+    font-size: 25px;
+}
+
+.home .communication .infocomm .text p {
+    margin: 0;
+    font-size: 13px;
+    color: #8176AF;
+
+}
+
+.intro {
+    color: #ffff;
+    margin-top: 50px;
+}
+
+.intro .row {
+    justify-content: center;
+}
+
+.intro h1 {
+    font-weight: bold;
+}
+
+.intro h1 span {
+    font-weight: 100;
+}
+
+#about {
+    margin-top: 0px;
+
+}
+
+#about .text {
+    margin-left: 40px;
+
+    padding: 40px 0;
+}
+
+
+#about .img img {
+    border-radius: 180px 90px 180px 90px;
+
+}
+
+.whybx {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+}
+
+.whybx .row {
+    justify-content: space-around;
+    padding: 0 50px;
+}
+
+.whybx .why {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 40px;
+    background: radial-gradient(50% 50% at 50% 50%, #433D60 0%, #211E2E 100%);
+    color: white;
+    width: 320px;
+    height: auto;
+    margin: 20px 2px;
+    padding-bottom: 40px;
+}
+
+.whybx .why img {
+    border-radius: 50%;
+    border: #433D60 solid 10px;
+    margin: 30px 0;
+}
+
+.whybx .why h3 {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.whybx .why h3::before {
+    position: absolute;
+    bottom: -15px;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #8176AF;
+}
+
+.whybx .why p {
+    padding: 0 20px;
+}
+
+
+.whybx .why button {
+    margin-top: 20px;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+    width: 170px;
+    height: 50px;
+}
+
+.whybx .tech {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    margin: 30px auto;
+    height: 200px;
+    padding-bottom: 50px;
+    background-image: url(./assets/img/vector7.png);
+    background-size: 100% 100%;
+    border-radius: 90px;
+}
+
+.whybx .tech h1 {
+    margin-top: 60px;
+}
+
+
+.whybx .logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 30px;
+}
+
+.how {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+
+}
+
+.how .answerbx {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+
+}
+
+.how .answerbx .answer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.how .answerbx .answer .num {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: solid 8px rgba(0, 0, 0, 0.778);
+    background: linear-gradient(251deg, #C0B7E8 12.87%, #8176AF 89.33%);
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.how .answerbx .answer .num p {
+    color: #343045;
+    font-size: 40px;
+
+}
+
+.how .answerbx .answer p {
+    color: white;
+}
+
+.how .answerbx .answer p i {
+    color: #C0B7E8;
+}
+
+.how form {
+    border-radius: 100px;
+    background: radial-gradient(50% 50% at 50% 50%, #403A5F 0%, #211E2E 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 50px auto 0 auto;
+    padding: 70px;
+}
+
+.how form header {
+    text-align: center;
+    color: white;
+}
+
+.how form header h2 {
+    font-weight: 100;
+}
+
+
+.how form .form-group {
+    margin: 30px 0;
+}
+
+.how form .form-group .form-control {
+    background: transparent;
+    border: solid white 1px;
+    border-radius: 30px;
+    color: white;
+
+}
+
+.how form .button {
+    margin: auto;
+    width: 170px;
+    height: 40px;
+}
+
+.how form .button button {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+    border: none;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+    margin-top: 50px;
+}
+
+
+footer .link {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .link ul li {
+    list-style-type: none;
+    color: white;
+    margin: 10px 0;
+
+}
+
+footer .link h5 {
+    color: white;
+}
+
+footer .link .social {
+    display: flex;
+}
+
+footer .link .social i {
+    background-color: #C0B7E8;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+footer .link button {
+    margin-top: 20px;
+    width: 180px;
+    height: 40px;
+    background-color: #C0B7E8;
+    border: none;
+    border-radius: 40px;
+
+}
+footer .last{
+    width: 100%;
+    height: auto;
+    text-align: center;
+color: white;
+padding: 30px;
+}
+
+@media (max-width:995px) {
+
+    .navbar-collapse {
+        background-color: #C0B7E8;
+
+    }
+
+    .navbar-collapse .nav-item .nav-link {
+        color: #403A5F;
+
+    }
+
+
+
+    .home .communication {
+
+        background: transparent;
+        /*  */
+
+    }
+
+    .home .communication .row {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home .communication .infocomm {
+
+        background: radial-gradient(2900.76% 50.13% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
+        border-radius: 50px;
+        padding: 10px;
+        /*  */
+
+    }
+
+    .home .communication .infocomm:nth-child(2) {
+
+
+        border: none;
+        /*  */
+    }
+
+
+}
